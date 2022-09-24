@@ -153,6 +153,9 @@ input::placeholder {
     border-radius: 25px;
 }
 
+.card > :first-child{
+    font-weight: 800;
+}
 .card p {
     margin: 10px;
     text-align: center;
@@ -177,7 +180,7 @@ input::placeholder {
 }
 
 .not-read {
-    background-color: #EF9788;
+            background-color: #BCBCBC;
     border: none;
     margin: 10px;
     padding: 15px 62px;
@@ -189,11 +192,11 @@ input::placeholder {
 }
 
 .not-read:hover {
-    background-color: #ed8a78;
+    background-color: #a6a6a6;
 }
 
 .remove-btn {
-    background-color: #BCBCBC;
+        background-color: #EF9788;
     border: none;
     margin: 10px;
     padding: 15px 62px;
@@ -205,5 +208,5 @@ input::placeholder {
 }
 
 .remove-btn:hover {
-    background-color: #a6a6a6;
+    background-color: #ed8a78;
 }
