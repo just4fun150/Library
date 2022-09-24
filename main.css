@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: #88e0ef;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #34415e;
+}
+
+h1 {
+    font-size: 6.4rem;
+    margin-top: 2.5rem;
+}
+
+.add-book {
+    padding: 15px 30px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    font-weight: 800;
+    font-size: 2.3rem;
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.add-book:hover {
+    background-color: #e6f3ff;
+}
+
+.form-container {
+    cursor: pointer;
+    background-color: white;
+    width: 300px;
+    height: 390px;
+    font-weight: 800;
+    padding-top: .5rem;
+    position: absolute;
+    top: -47%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    opacity: 1;
+    user-select: none;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 5%;
+    transform: translate(-50%, 50%) scale(1);
+
+}
+
+.form-header {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+}
+
+.form-container input[type=text],
+.form-container input[type=number] {
+    width: 85%;
+    padding: 15px;
+    margin: 5px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 8px;
+
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.checkbox-container {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1.5rem;
+    padding-left: 1.7rem;
+}
+
+.checkbox-container input[type=checkbox] {
+    margin-left: 1rem;
+    border: none;
+    accent-color: #BCBCBC;
+    width: 30px;
+    height: 17px;
+}
+
+
+.form-container input[type=submit] {
+    width: 85%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: #88e0ef;
+    border-radius: 8px;
+}
+
+input::placeholder {
+    font-size: 1.7rem;
+    opacity: .4;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-emodal {
+    visibility: visible;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 6rem;
+    justify-items: center;
+}
+
+.card {
+    background-color: aliceblue;
+    border: none;
+    width: 99%;
+    height: 340px;
+    border-radius: 25px;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.9rem;
+}
+
+.read {
+    background-color: #88EFA6;
+    border: none;
+    margin: 10px;
+    padding: 15px 62px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.9rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.read:hover {
+    background-color: #62ea88;
+}
+
+.not-read {
+    background-color: #EF9788;
+    border: none;
+    margin: 10px;
+    padding: 15px 62px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.9rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.not-read:hover {
+    background-color: #ed8a78;
+}
+
+.remove-btn {
+    background-color: #BCBCBC;
+    border: none;
+    margin: 10px;
+    padding: 15px 62px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.9rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #a6a6a6;
+}

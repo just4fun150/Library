@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Library</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <h1>Library Project</h1>
+
+    <button class="add-book" id="add-book">+ Add book</button>
+
+    <div class="book-container"></div>
+    <div id="modal">
+        <div class="form-container" id="formContainer">
+            <p class="form-header">Add a new book</p>
+            <form>
+                <label for="ftitle"></label><br />
+                <input type="text" id="ftitle" name="ftitle" placeholder="Title" required /><br />
+                <label for="fauthor"></label><br />
+                <input type="text" id="fauthor" name="lfauthor" placeholder="Author" required /><br />
+                <label for="fpages"></label><br />
+                <input type="number" id="fpages" name="fpages" placeholder="Pages" max="10000" required /><br />
+                <p class="checkbox-container">
+                    <label for="read-status">Have you read it?</label>
+                    <input type="checkbox" id="read-status" name="read-status" value="not read" />
+                </p>
+                <input type="submit" value="Add" />
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
